@@ -1,0 +1,30 @@
+{
+  "name": "com.phonegap.helloworld",
+  "version": "1.0.0",
+  "displayName": "PlaceholderSite",
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-android-permissions": {},
+      "phonegap-plugin-push": {
+        "SENDER_ID": "280477887962"
+      }
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^7.0.0",
+    "cordova-browser": "^5.0.3",
+    "cordova-plugin-android-permissions": "^1.0.0",
+    "cordova-plugin-console": "~1.0.1",
+    "cordova-plugin-statusbar": "~1.0.1",
+    "cordova-plugin-whitelist": "~1.2.0",
+    "opensheetmusicdisplay": "^0.3.0",
+    "phonegap-plugin-push": "^2.2.2"
+  }
+}

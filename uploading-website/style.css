@@ -1,0 +1,47 @@
+body {
+    font-family: "Century Gothic", Verdana, sans-serif;
+}
+
+.header{
+    width: 100%;
+    text-align:center;
+    line-height: .5;
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px
+}
+
+svg {
+    border: solid gray 2px;
+    background-color: white;
+}
+
+div {
+    text-align: center;
+}
+
+.not_selected {
+    opacity: 0.2;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+.selected {
+    opacity: 1;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}

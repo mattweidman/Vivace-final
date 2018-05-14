@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="left">
+                        <a href="#" class="back link">
+                            <i class="icon icon-back"></i>
+                            <span>Back</span>
+                        </a>
+                    </div>
+                    <div class="center sliding" id="song-title"></div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-fixed toolbar-fixed">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="song-info" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content pull-to-refresh-content" id="song-refresh">
+                        <div class="pull-to-refresh-layer">
+                          <div class="preloader"></div>
+                          <div class="pull-to-refresh-arrow"></div>
+                        </div>
+                        <div class="content-block">
+                            <div class="content-block-title">Parts</div>
+                            <div class="list-block">
+                                <ul class="list" id="song-parts">
+
+                                </ul>
+                            </div>
+                            <div class="content-block-title">Info</div>
+                            <div class="list-block">
+                                <ul class="list">
+                                    <li class="item-content">
+                                        <div class="item-inner">
+                                            <div id="song-id"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

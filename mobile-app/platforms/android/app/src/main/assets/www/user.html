@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner" id="user-navbar">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="left">
+                        <a href="#" id="log-out-button" class="link">
+                            <i class="icon"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </div>
+                    <div class="center" id="user-title">Welcome</div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-fixed toolbar-fixed">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="user-info" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content pull-to-refresh-content" id="user-refresh">
+                        <div class="pull-to-refresh-layer">
+                          <div class="preloader"></div>
+                          <div class="pull-to-refresh-arrow"></div>
+                        </div>
+                        <div class="content-block">
+                            <div class="buttons-row">
+                                <a href="#bands" class="tab-link active button" id="user-bands-button">Your Bands</a>
+                                <a href="#events" class="tab-link button" id="user-events-button">Upcoming Events</a>
+                            </div>
+                        </div>
+
+                        <div class="tabs">
+                            <div id="bands" class="tab active">
+                                <div class="content-block">
+                                    <div class="content-block-title">Your bands</div>
+                                    <div class="list-block">
+                                        <ul class="list" id="user-bands">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="events" class="tab">
+                                <div class="content-block">
+                                    <div class="content-block-title">Upcoming events</div>
+                                    <div class="list-block">
+                                        <ul class="list" id="user-events">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toolbar">
+                        <div class="toolbar-inner">
+                            <!-- Toolbar links -->
+                            <a href="join_band.html" class="link" id="left-button-user">Join Band</a>
+                            <a href="create_band.html" class="link" id="right-button-user">Create Band</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

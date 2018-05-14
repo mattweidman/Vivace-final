@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+
+    <platform name="android">
+      <resource-file src="google-services.json" target="app/google-services.json" />
+    </platform>
+
+    <!-- Your app title -->
+    <title>Vivace</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="theme-blue">
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center">Vivace</div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-fixed">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
+    <script src="firebase-messaging-sw.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AAAAQU3I7do:APA91bFbzg1psnLIs9EcXV3IsRFdX3B2aKs8rjXWhMupklstk1UoOnpeoS6uFx0B6Wm5s0x7mbPnMYrzpfmRHDCaciGLFVRYDyZ03a8o5UyipsqKdviXLZhQaFvHUo3CCVV_6p5jr49T",
+        authDomain: "vivace-658a1.firebaseapp.com",
+        databaseURL: "https://vivace-658a1.firebaseio.com",
+        projectId: "vivace-658a1",
+        storageBucket: "",
+        messagingSenderId: "280477887962"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="index.bundle.js"></script>
+    <script type="text/javascript" src="js/lru.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/band.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/songs.js"></script>
+    <script type="text/javascript" src="js/events.js"></script>
+    <script type="text/javascript" src="js/songlist.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-chrome-apps-common@1",
+        "scope": null,
+        "escapedName": "cordova-plugin-chrome-apps-common",
+        "name": "cordova-plugin-chrome-apps-common",
+        "rawSpec": "1",
+        "spec": ">=1.0.0 <2.0.0",
+        "type": "range"
+      },
+      "/mnt/c/Users/nirra/Documents/Cornell/SeniorYear/Spring2018/Cloud Computing/Phonegap/Test 2"
+    ]
+  ],
+  "_from": "cordova-plugin-chrome-apps-common@>=1.0.0 <2.0.0",
+  "_id": "cordova-plugin-chrome-apps-common@1.0.7",
+  "_inCache": true,
+  "_location": "/cordova-plugin-chrome-apps-common",
+  "_nodeVersion": "0.10.29",
+  "_npmUser": {
+    "name": "agrieve",
+    "email": "agrieve@chromium.org"
+  },
+  "_npmVersion": "2.1.18",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-chrome-apps-common@1",
+    "scope": null,
+    "escapedName": "cordova-plugin-chrome-apps-common",
+    "name": "cordova-plugin-chrome-apps-common",
+    "rawSpec": "1",
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-chrome-apps-common/-/cordova-plugin-chrome-apps-common-1.0.7.tgz",
+  "_shasum": "300319b59c79dc552293f83a2332cf283b10908a",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-chrome-apps-common@1",
+  "_where": "/mnt/c/Users/nirra/Documents/Cornell/SeniorYear/Spring2018/Cloud Computing/Phonegap/Test 2",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-common/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-chrome-apps-common",
+    "platforms": []
+  },
+  "dependencies": {},
+  "description": "This plugin is a dependency for a few other chromium plugins.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "300319b59c79dc552293f83a2332cf283b10908a",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-chrome-apps-common/-/cordova-plugin-chrome-apps-common-1.0.7.tgz"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "gitHead": "738431b296f1bfaa39abaa01871778ed2ee2359b",
+  "homepage": "https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-common",
+  "keywords": [
+    "chrome",
+    "common",
+    "util",
+    "ecosystem:cordova"
+  ],
+  "license": "BSD",
+  "maintainers": [
+    {
+      "name": "agrieve",
+      "email": "agrieve@chromium.org"
+    }
+  ],
+  "name": "cordova-plugin-chrome-apps-common",
+  "optionalDependencies": {},
+  "readme": "# chrome-common\nThis plugin is a dependency for a few other chromium plugins.\n\n# Release Notes\n\n## 1.0.7 (April 30, 2015)\n- Renamed plugin to pubilsh to NPM\n\n## 1.0.6 (Mar 17, 2015)\n* Update code comment\n\n## 1.0.5 (Jan 27, 2015)\n* chrome.runtime: fix getURL when running in Cordova (fixes #487) - Only use manifest to resolve url when running in a Chrome App - Generate correct urls when running under Cordova, based on current location\n* Make all Event.fire()s equate to queueStartUpEvent calls.\n* Change helpers.delayDeviceReadyUntil() and helpers.queueLifeCycleEvent()\n* Allow setting error.code as well as error.message for callbackWithError()\n* Don't log all errors by default, let apps handle runtime.lastError silently\n\n## 1.0.4 (November 17,2014)\n* chrome.alarms: Make it more robust and prevent onLaunched when onAlarm is the cause of the Activity starting up\n\n## 1.0.3 (October 21, 2014)\n* Documentation updates.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-common.git"
+  },
+  "scripts": {},
+  "version": "1.0.7"
+}

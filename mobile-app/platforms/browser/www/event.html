@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="left">
+                        <a href="#" class="back link">
+                            <i class="icon icon-back"></i>
+                            <span>Back</span>
+                        </a>
+                    </div>
+                    <div class="center sliding" id="event-title"></div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-fixed toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="event-info" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content pull-to-refresh-content" id="event-refresh">
+                        <div class="pull-to-refresh-layer">
+                          <div class="preloader"></div>
+                          <div class="pull-to-refresh-arrow"></div>
+                        </div>
+                        <div class="content-block">
+                            <div class="buttons-row">
+                                <a href="#event-songs-tab" class="tab-link active button" id="event-songs-button">Songs</a>
+                                <a href="#event-settings-tab" class="tab-link button" id="event-settings-button">Settings</a>
+                            </div>
+                        </div>
+
+                        <div class="tabs">
+                            <div id="event-songs-tab" class="tab active">
+                                <div class="content-block">
+                                  <div class="content-block-title">Songs</div>
+                                    <div class="list-block">
+                                        <ul class="list" id="event-songs">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="event-settings-tab" class="tab">
+                                <div class="content-block">
+                                    <div class="content-block-title">Settings</div>
+                                    <div class="list-block">
+                                        <ul class="list" id="event-settings">
+                                            <li class="item-content" id="subscribe">
+                                                <div class="item-inner">
+                                                    <div class="item-title" id="subscription-type"></div>
+                                                </div>
+                                            </li>
+                                            <li class="item-content" id="rename-event">
+                                                <div class="item-inner">
+                                                    <div class="item-title">Rename</div>
+                                                </div>
+                                            </li>
+                                            <li class="item-content" id="notify-event">
+                                                <div class="item-inner">
+                                                    <div class="item-title">Notify players about next song</div>
+                                                </div>
+                                            </li>
+                                            <li class="item-content" id="delete-event">
+                                                <div class="item-inner">
+                                                    <div class="item-title">Delete event</div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="content-block-title">Info</div>
+                                    <div class="list-block">
+                                        <ul class="list" id="event-settings">
+                                            <li class="item-content">
+                                                <div class="item-inner">
+                                                    <div id="event-id"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toolbar">
+                        <div class="toolbar-inner">
+                            <!-- Toolbar links -->
+                            <a class="link" id="left-button-event">Add Song</a>
+                            <a class="link" id="right-button-event">Remove Song</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+
+</html>

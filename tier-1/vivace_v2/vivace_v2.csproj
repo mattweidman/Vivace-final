@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>vivace</AssemblyName>
+    <RootNamespace>vivace</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB" Version="1.21.0" />
+  </ItemGroup>
+
+</Project>

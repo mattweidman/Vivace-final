@@ -1,0 +1,13 @@
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\obj\Debug\netcoreapp2.0\vivace_v2.csprojResolveAssemblyReference.cache
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\obj\Debug\netcoreapp2.0\vivace_v2.csproj.CoreCompileInputs.cache
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\obj\Debug\netcoreapp2.0\vivace_v2.AssemblyInfoInputs.cache
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\obj\Debug\netcoreapp2.0\vivace_v2.AssemblyInfo.cs
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\bin\Debug\netcoreapp2.0\vivace.deps.json
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\bin\Debug\netcoreapp2.0\vivace.runtimeconfig.json
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\bin\Debug\netcoreapp2.0\vivace.runtimeconfig.dev.json
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\bin\Debug\netcoreapp2.0\vivace.dll
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\bin\Debug\netcoreapp2.0\vivace.pdb
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\obj\Debug\netcoreapp2.0\vivace.dll
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\obj\Debug\netcoreapp2.0\vivace.pdb
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\bin\Debug\netcoreapp2.0\Microsoft.Azure.Documents.ServiceInterop.dll
+D:\Documents_HDD\cs5412\vivace_v2\vivace_v2\bin\Debug\netcoreapp2.0\DocumentDB.Spatial.Sql.dll

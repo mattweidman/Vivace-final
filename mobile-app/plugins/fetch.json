@@ -1,0 +1,52 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@~1.2.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-console": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-console@~1.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-statusbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-statusbar@~1.0.1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-android-permissions": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-android-permissions"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "phonegap-plugin-push": {
+    "source": {
+      "type": "registry",
+      "id": "phonegap-plugin-push@2.2.2"
+    },
+    "is_top_level": true,
+    "variables": {
+      "SENDER_ID": "280477887962"
+    }
+  },
+  "cordova-plugin-chrome-apps-common": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-chrome-apps-common@1"
+    },
+    "is_top_level": false,
+    "variables": {}
+  }
+}

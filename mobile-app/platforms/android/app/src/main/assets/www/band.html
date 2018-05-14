@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!-- Status bar overlay for full screen mode (PhoneGap) -->
+  <div class="statusbar-overlay"></div>
+
+  <!-- Views -->
+  <div class="views">
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Top Navbar-->
+      <div class="navbar">
+        <div class="navbar-inner">
+          <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+          <div class="left">
+            <a href="#" class="back link">
+              <i class="icon icon-back"></i>
+              <span>Back</span>
+            </a>
+          </div>
+          <div class="center sliding" id="band-title"></div>
+        </div>
+      </div>
+      <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+      <div class="pages navbar-fixed toolbar-fixed">
+        <!-- Page, "data-page" contains page name -->
+        <div data-page="band-info" class="page">
+          <!-- Scrollable page content -->
+          <div class="page-content pull-to-refresh-content" id="band-refresh">
+            <div class="pull-to-refresh-layer">
+              <div class="preloader"></div>
+              <div class="pull-to-refresh-arrow"></div>
+            </div>
+           <div class="content-block">
+             <div class="buttons-row">
+               <a href="#songs" class="tab-link active button" id="band-songs-button">Songs</a>
+               <a href="#band-events-tab" class="tab-link button" id="band-events-button">Events</a>
+               <a href="#settings" class="tab-link button" id="band-settings-button">Settings</a>
+             </div>
+           </div>
+
+           <div class="tabs">
+             <div id="songs" class="tab active">
+               <div class="content-block">
+                 <div class="content-block-title">Songs</div>
+                 <div class="list-block">
+                   <ul class="list" id="band-songs">
+
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div id="band-events-tab" class="tab">
+               <div class="content-block">
+                 <div class="content-block-title">Upcoming events</div>
+                 <div class="list-block">
+                   <ul class="list" id="band-events">
+
+                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div id="settings" class="tab">
+               <div class="content-block">
+                 <div class="content-block-title">Settings</div>
+                 <div class="list-block">
+                   <ul class="list" id="band-settings">
+                    <li class="item-content" id="rename-band">
+                      <div class="item-inner">
+                        <div class="item-title">Rename</div>
+                      </div>
+                    </li>
+                    <li class="item-content" id="leave-band">
+                      <div class="item-inner">
+                        <div class="item-title">Leave</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-block-title">Info</div>
+                <div class="list-block">
+                  <ul class="list">
+                    <li class="item-content">
+                      <div class="item-inner">
+                        <div id="band-id"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="toolbar toolbar-bottom-md">
+          <div class="toolbar-inner">
+            <!-- Toolbar links -->
+            <a class="link" id="left-button-band">Add Song</a>
+            <a class="link" id="right-button-band">Remove Song</a>
+          </div>
+        </div>
+     </div>
+   </div>
+ </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding" id="login-title">Log In</div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-fixed toolbar-fixed">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="login-page" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+                            <div class="content-block">
+                                <p>Log in to see your music!</p>
+                            </div>
+
+                            <form class="list-block" id="login-form2">
+                                <ul>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Username</div>
+                                                <div class="item-input">
+                                                    <input type="text" name="username" placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                            <div class="content-block">
+                              <div class="col"><a class="button convert-form-to-data" id="login" href="#">Log in</a></div>
+                            </div>
+
+                            <!-- Link to another page -->
+                            <a class="link" href="create_user.html">Create an Account</a></br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

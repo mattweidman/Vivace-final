@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Vivace Song Upload</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="src.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form>
+            Song name:<br>
+            <input type="text" name="songname">
+        </form>
+        <button type="button" onclick="createSong()">Enter</button>
+    </div>
+    <div>
+        <form>
+            Instrument:<br>
+            <input type="text" name="instrument">
+        </form>
+        <button type="button" onclick="createPart()">Enter</button>
+    </div>
+    <div>
+        <form>
+            SongID: <br>
+            <input type="text" name="songid"><br>
+            PartID:<br>
+            <input type="text" name="partid">
+        </form>
+        <button type="button" onclick="deletePart()">Enter</button>
+    </div>
+    <div>
+        <input type="file" id="files" name="files[]" multiple />
+
+        <script>
+            function handleFileSelect(evt) {
+                var files = evt.target.files; // FileList object
+                var reader = new FileReader();
+                console.log(files)
+                reader.onloadend = function(f) {
+                    uploadPart(f);
+                }
+                reader.readAsText(files[0]);
+            };
+
+            document.getElementById('files').addEventListener('change', handleFileSelect, false);
+        </script>
+    </div>
+</body>
+</html>
